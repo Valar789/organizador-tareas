@@ -11,14 +11,26 @@ export default function Home() {
   ];
 
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
-    >
-      <div className="grid grid-rows-3 h-screen w-screen ">
-        {titlesPriority.map((element) => (
-          <Rows key={element.title} title={element.title} color={element.color} />
-        ))}
-      </div>
-    </main>
+    <>
+      <main
+        className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
+      >
+        <div className="grid grid-rows-3 h-screen w-full z-10 ">
+          {titlesPriority.map((element) => (
+            <Rows
+              key={element.title}
+              title={element.title}
+              color={element.color}
+            />
+          ))}
+        </div>
+        <footer className="h-3 text-xs text-gray-700">
+        <a target="_blank" href="https://luis-miguel-zuleta-orozco.vercel.app/">
+          @Luis Miguel Zuleta 
+        </a>
+      </footer>
+      </main>
+
+    </>
   );
 }
