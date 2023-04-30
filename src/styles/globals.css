@@ -18,7 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-image: linear-gradient(to top, #c0d7ee 0%, rgb(214, 212, 212) 100%);
+  background-image: linear-gradient(to top, #ffecdd 0%, rgb(255, 255, 255) 100%);
  
     border: 0;
     padding: 0;

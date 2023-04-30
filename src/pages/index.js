@@ -24,13 +24,7 @@ export default function Home() {
             />
           ))}
         </div>
-        <footer className="h-3 text-xs text-gray-700">
-        <a target="_blank" href="https://luis-miguel-zuleta-orozco.vercel.app/">
-          @Luis Miguel Zuleta 
-        </a>
-      </footer>
       </main>
-
     </>
   );
 }
