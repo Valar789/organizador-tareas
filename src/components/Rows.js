@@ -99,13 +99,13 @@ export default function Rows({ title, color }) {
           value={value}
           minLength={4}
           maxLength={200}
-          placeholder="+ Agregar tarea"
+          placeholder="Tarea"
           className="p-2 row-span-6 grid place-content-center text-center w-full h-full"
         />
         <button
           className={`text-white ${colorBorderB} grid place-content-center h-full`}
         >
-          Agregar tarea
+         + Añadir tarea
         </button>
       </form>
     </div>
