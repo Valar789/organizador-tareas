@@ -27,3 +27,29 @@ body {
     border: 0;
     padding: 0;
 }
+
+/* ancho de la barra */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+
+}
+
+/* color de fondo de la barra */
+::-webkit-scrollbar-track {
+  background-color: #352a9921;
+
+}
+
+/* color del relleno de la barra */
+::-webkit-scrollbar-thumb {
+  background-color: #bdbbbb;
+  border-radius: 10px;
+
+}
+
+/* color del relleno de la barra cuando está en hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3d4753;
+
+}
