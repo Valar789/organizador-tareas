@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const titlesPriority = [
     { title: "Alta prioridad", color: "bg-rose-600" },
-    { title: "Media Proridad", color: "bg-orange-500" },
-    { title: "Baja Prioridad", color: "bg-green-500" },
+    { title: "Media prioridad", color: "bg-orange-500" },
+    { title: "Baja prioridad", color: "bg-green-500" },
   ];
 
   return (

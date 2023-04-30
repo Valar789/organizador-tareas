@@ -9,8 +9,8 @@ export default function Rows({ title, color }) {
   const nameList = title;
 
   title === "Alta prioridad" && (colorBorderB = "border-rose-600");
-  title === "Media Proridad" && (colorBorderB = "border-orange-500");
-  title === "Baja Prioridad" && (colorBorderB = "border-green-500");
+  title === "Media prioridad" && (colorBorderB = "border-orange-500");
+  title === "Baja prioridad" && (colorBorderB = "border-green-500");
 
   const handleDelete = (e, i) => {
     e.preventDefault();
@@ -67,7 +67,7 @@ export default function Rows({ title, color }) {
           listTask.map((task, i) => (
             <div
               key={task}
-              className={`bg-white rounded-md shadow shadow-gray-400 w-52 mx-1 border-b-8 ${colorBorderB} overflow-auto text-sm col-span-2 flex flex-col text-center h-full`}
+              className={`bg-white h-52 rounded-md shadow shadow-gray-400 w-52 mx-1 border-b-8 ${colorBorderB} overflow-auto text-sm col-span-2 flex flex-col text-center h-full`}
             >
               <div className=" font-bold text-gray-400 h-5 p-1 flex justify-between">
                 <div className="grid place-content-center ">{i + 1}</div>
