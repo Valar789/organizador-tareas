@@ -50,7 +50,7 @@ export default function Rows({ title, color }) {
   };
 
   return (
-    <div className="mb-2   grid grid-cols-12 w-full overflow-auto">
+    <div className="mb-2 border-b  grid grid-cols-12 w-full overflow-auto">
       <div
         className={`${color} rounded-md shadow shadow-gray-400 text-xs md:text-lg col-span-2 grid place-content-center text-white`}
       >
@@ -67,7 +67,7 @@ export default function Rows({ title, color }) {
           listTask.map((task, i) => (
             <div
               key={task}
-              className={`bg-white h-52 rounded-md shadow shadow-gray-400 w-52 mx-1 border-b-8 ${colorBorderB} overflow-auto text-sm col-span-2 flex flex-col text-center `}
+              className={`bg-white h-full  rounded-md shadow shadow-gray-400 w-52 mx-1 border-b-8 ${colorBorderB} overflow-auto text-sm col-span-2 flex flex-col text-center `}
             >
               <div className=" font-bold text-gray-400 h-5 p-1 flex justify-between">
                 <div className="grid place-content-center ">{i + 1}</div>
