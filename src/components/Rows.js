@@ -8,7 +8,7 @@ export default function Rows({ title, color }) {
   let colorBorderB;
   const nameList = title;
 
-  title === "Alta prioridad" && (colorBorderB = "border-red-500");
+  title === "Alta prioridad" && (colorBorderB = "border-rose-600");
   title === "Media Proridad" && (colorBorderB = "border-orange-500");
   title === "Baja Prioridad" && (colorBorderB = "border-green-500");
 
@@ -50,7 +50,7 @@ export default function Rows({ title, color }) {
   };
 
   return (
-    <div className="mb-2  grid grid-cols-12 w-full overflow-auto">
+    <div className="mb-2   grid grid-cols-12 w-full overflow-auto">
       <div
         className={`${color} rounded-md shadow shadow-gray-400 text-xs md:text-lg col-span-2 grid place-content-center text-white`}
       >
@@ -70,7 +70,7 @@ export default function Rows({ title, color }) {
               className={`bg-white rounded-md shadow shadow-gray-400 w-52 mx-1 border-b-8 ${colorBorderB} overflow-auto text-sm col-span-2 flex flex-col text-center h-full`}
             >
               <div className=" font-bold text-gray-400 h-5 p-1 flex justify-between">
-                <div className="grid place-content-center">{i + 1}</div>
+                <div className="grid place-content-center ">{i + 1}</div>
 
                 <button
                   onClick={(e) => handleDelete(e, i)}

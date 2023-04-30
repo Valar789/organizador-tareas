@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const titlesPriority = [
-    { title: "Alta prioridad", color: "bg-red-500" },
+    { title: "Alta prioridad", color: "bg-rose-600" },
     { title: "Media Proridad", color: "bg-orange-500" },
     { title: "Baja Prioridad", color: "bg-green-500" },
   ];
@@ -24,6 +24,7 @@ export default function Home() {
             />
           ))}
         </div>
+        <a className="fixed hidden sm:block bottom-3 left-1 text-xs z-10 text-white" target="_blank" href="https://luis-miguel-zuleta-orozco.vercel.app/">@Luis Miguel Zuleta</a>
       </main>
     </>
   );
