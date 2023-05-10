@@ -11,9 +11,9 @@ export default function Done() {
 
   return (
     <main className="max-w-2xl bg-white p-4 h-screen   m-auto ">
-      <h1 className="text-xl font-bold text-gray-600 text-center  ">
+      <h2 className="text-xl font-bold text-gray-600 text-center  ">
         Tareas terminadas
-      </h1>
+      </h2>
       <div className="overflow-auto h-full px-3">
         {listTaskDone.map((element) => (
           <div

@@ -73,9 +73,9 @@ export default function Home() {
   return (
     <>
       <main className={`max-w-5xl bg-white p-4 h-full min-h-screen m-auto ${roboto.className}`}>
-        <h1 className="text-xl font-bold text-gray-600 text-center my-5">
+        <h2 className="text-xl font-bold text-gray-600 text-center my-5">
           Tareas pendientes
-        </h1>
+        </h2>
         <form
           className="flex gap-2 h-12 rounded-md mb-7"
           onSubmit={handleAddTask}
