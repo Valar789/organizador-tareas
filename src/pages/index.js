@@ -1,8 +1,13 @@
 import Rows from "@/components/Rows";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import { useEffect, useState } from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 let nameList="saveTask";
 
@@ -67,9 +72,9 @@ export default function Home() {
 
   return (
     <>
-      <main className={`max-w-5xl bg-white p-4 h-full min-h-screen m-auto ${inter.className}`}>
+      <main className={`max-w-5xl bg-white p-4 h-full min-h-screen m-auto ${roboto.className}`}>
         <h1 className="text-xl font-bold text-gray-600 text-center my-5">
-          Todas las tareas pendientes
+          Tareas pendientes
         </h1>
         <form
           className="flex gap-2 h-12 rounded-md mb-7"

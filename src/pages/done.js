@@ -10,16 +10,21 @@ export default function Done() {
   }, []);
 
   return (
-    <main className="max-w-2xl bg-white p-4 h-full min-h-screen m-auto">
-      <h1 className="text-xl font-bold text-gray-600 text-center my-5">
+    <main className="max-w-2xl bg-white p-4 h-screen   m-auto ">
+      <h1 className="text-xl font-bold text-gray-600 text-center  ">
         Tareas terminadas
       </h1>
-      {listTaskDone.map((element) => (
-        <div className="flex justify-between border-b mb-1" key={element.nameTask}>
-          <span>- {element.nameTask}</span>
-          <span>{element.dateDone}</span>
-        </div>
-      ))}
+      <div className="overflow-auto h-full px-3">
+        {listTaskDone.map((element) => (
+          <div
+            className="flex justify-between border-b mb-1"
+            key={element.nameTask}
+          >
+            <span>- {element.nameTask}</span>
+            <span>{element.dateDone}</span>
+          </div>
+        ))}
+      </div>
     </main>
   );
 }
