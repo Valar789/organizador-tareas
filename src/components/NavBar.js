@@ -8,6 +8,7 @@ export default function NavBar() {
       <div className="flex gap-3">
         <Link href="/">Pendientes</Link>
         <Link href="/done">Terminadas </Link>
+        <Link href="/questions">Preguntas Trabajo</Link>
       </div>
       <div></div>
     </div>
