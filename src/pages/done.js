@@ -10,7 +10,7 @@ export default function Done() {
   }, []);
 
   return (
-    <main className="max-w-2xl bg-white p-4 h-screen   m-auto ">
+    <main className="max-w-5xl bg-white p-4 h-screen   m-auto ">
       <h2 className="text-xl font-bold text-gray-600 text-center  ">
         Tareas terminadas
       </h2>
